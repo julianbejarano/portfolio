@@ -1,0 +1,82 @@
+[
+  {
+    "id": "anima-cicada-speculatrix",
+    "title": "Anima – Cicada Speculatrix",
+    "type": "Arte electrónico",
+    "year": null,
+    "summary": "Obras que hacen evidente el espectro electromagnético que circula por las ciudades.",
+    "url": "https://www.julianbejarano.com/p/cicada-speculatrix.html",
+    "image": null,
+    "video": null
+  },
+  {
+    "id": "anima",
+    "title": "Anima",
+    "type": "Instalación",
+    "year": null,
+    "summary": "Exploración sensible del espectro de las redes Wifi de la ciudad.",
+    "url": "https://www.julianbejarano.com/p/anima.html",
+    "image": null,
+    "video": null
+  },
+  {
+    "id": "spectrum",
+    "title": "Spectrum",
+    "type": "Dispositivos híbridos",
+    "year": null,
+    "summary": "Proyecto en curso: dispositivos con desecho industrial, electrónica y elementos bióticos.",
+    "url": "https://www.julianbejarano.com/p/spectrum.html",
+    "image": null,
+    "video": null
+  },
+  {
+    "id": "damaged-universe",
+    "title": "Damaged Universe",
+    "type": "Videojuego",
+    "year": null,
+    "summary": "Un sapo recolecta semillas en el humedal Tibabuyes mientras huye de los desechos.",
+    "url": "https://julianbejarano.github.io/HumedalGame/",
+    "image": null,
+    "video": null
+  },
+  {
+    "id": "malezario",
+    "title": "Malezario",
+    "type": "Software / Creative coding",
+    "year": null,
+    "summary": "Genera frases que invitan a sembrar malezas frente a los males de los titulares latinoamericanos.",
+    "url": "https://www.openprocessing.org/sketch/942134",
+    "image": null,
+    "video": null
+  },
+  {
+    "id": "con-tacto",
+    "title": "Con-Tacto",
+    "type": "Workshop",
+    "year": null,
+    "summary": "Juegos y prototipos sonoros y táctiles creados con estudiantes con baja visión.",
+    "url": "https://www.julianbejarano.com/p/contacto_4.html",
+    "image": null,
+    "video": null
+  },
+  {
+    "id": "construccion-popular",
+    "title": "Construcción Popular",
+    "type": "Fotografía documental",
+    "year": 2017,
+    "summary": "Serie de 12 imágenes sobre constructores de vivienda en la periferia de Bogotá. Primer lugar, Premio de Fotografía Ciudad de Bogotá.",
+    "url": "https://www.julianbejarano.com/p/construccion.html",
+    "image": null,
+    "video": null
+  },
+  {
+    "id": "good-driver",
+    "title": "Good Driver",
+    "type": "Videojuego",
+    "year": null,
+    "summary": "Juego para recordar las normas básicas de seguridad vial.",
+    "url": "https://www.julianbejarano.com/p/videogames.html",
+    "image": null,
+    "video": null
+  }
+]

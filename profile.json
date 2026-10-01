@@ -1,0 +1,92 @@
+{
+  "site": {
+    "lang": "es",
+    "name": "Julián Bejarano",
+    "title": "Julián Bejarano — Artista visual y creador digital",
+    "description": "Portafolio de Julián Bejarano (Bogotá, 1988): artista visual, instalación multimedia, creative coding y artes electrónicas."
+  },
+
+  "nav": [
+    { "label": "Home", "href": "#home" },
+    { "label": "Work", "href": "#work" },
+    { "label": "Info", "href": "#info" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+
+  "hero": {
+    "eyebrow": "Bogotá, Colombia",
+    "headline": "Artista visual y creador digital: arte, código y comunidad."
+  },
+
+  "about": {
+    "title": "Sobre mí",
+    "text": "Artista plástico y visual egresado de la Universidad Nacional de Colombia, con estudios en ingeniería mecatrónica. Trabaja en producción de medios digitales, instalación multimedia, código y artes electrónicas.",
+    "linkLabel": "Más sobre mí →"
+  },
+
+  "featured": {
+    "title": "Proyecto destacado",
+    "projectId": "damaged-universe",
+    "description": "Videojuego que parte de las condiciones ambientales del humedal Tibabuyes, en el occidente de Bogotá: un sapo debe recolectar semillas mientras huye de bolsas plásticas y otros desechos.",
+    "linkLabel": "Jugar (versión en desarrollo) ↗"
+  },
+
+  "work": {
+    "title": "Portafolio"
+  },
+
+  "services": {
+    "title": "Servicios y skills",
+    "capabilitiesTitle": "Capacidades",
+    "capabilities": [
+      "Instalación multimedia y video mapping",
+      "Creative coding (p5.js / Processing)",
+      "Desarrollo web (React, PHP)",
+      "Videojuegos",
+      "Docencia e investigación en artes electrónicas"
+    ],
+    "inspirationsTitle": "Inspiraciones",
+    "inspirations": "[Por definir]"
+  },
+
+  "info": {
+    "title": "Info",
+    "portrait": {
+      "src": "assets/profile.jpg",
+      "alt": "Retrato de Julián Bejarano"
+    },
+    "bio": [
+      {
+        "lang": "es",
+        "text": "Julián Bejarano (Bogotá, 1988) es artista plástico y visual egresado de la Universidad Nacional de Colombia, donde también realizó estudios en ingeniería mecatrónica. Su desempeño profesional se ha encaminado a la práctica fotográfica, la producción audiovisual y la instalación multimedia. Obtuvo el primer puesto en el “Premio de Fotografía: Ciudad de Bogotá”, categoría “Cotidianidad y vida de barrio”, e integró el equipo ganador de la beca del Ministerio de Cultura para jóvenes creadores circenses como creador escenográfico por medio de video mapping."
+      },
+      {
+        "lang": "es",
+        "text": "En el campo pedagógico fue investigador y docente en el proyecto “Colombia un paseo literario” (Iberbibliotecas y Ministerio de Cultura) y actualmente es docente e investigador pedagógico del área “Artes Electrónicas” en el programa Crea, de Idartes. Su obra promueve el uso de diferentes medios y tecnologías por parte de las comunidades como estrategia de representación autónoma, cuestiona los usos de la tecnología, impulsa el software y hardware libre y busca hibridaciones entre arte, ciencia y tecnología."
+      },
+      {
+        "lang": "en",
+        "text": "Julián Bejarano (Bogotá, 1988) is a visual artist graduated from the Universidad Nacional de Colombia, where he also studied mechatronics engineering. His professional work focuses on digital media production, multimedia installation, coding and electronic arts, and on promoting the use of different media and technologies by communities as an autonomous representation strategy."
+      }
+    ],
+    "educationTitle": "Educación",
+    "education": [
+      { "date": "Abril 2023", "text": "Udemy — Certificado en React (virtual)" },
+      { "date": "Diciembre 2021", "text": "Universidad Pontificia Bolivariana – MinTic — Certificado en lenguajes de programación, 800 horas (Medellín)" },
+      { "date": "Abril 2021", "text": "SENA — Desarrollo web con PHP (Bogotá)" },
+      { "date": "Octubre 2020", "text": "Universidad del Valle — Taller internacional “Documenta Transmedia” (Cali)" },
+      { "date": "Enero 2015", "text": "Universidad Nacional de Colombia — Maestro en Artes Plásticas y Visuales (Bogotá)" },
+      { "date": "2013", "text": "ENPEG, Escuela “La Esmeralda” — Intercambio académico (México D.F.)" }
+    ]
+  },
+
+  "contact": {
+    "title": "Contacto",
+    "links": [
+      { "label": "julianbejaranog@gmail.com", "href": "mailto:julianbejaranog@gmail.com" },
+      { "label": "YouTube ↗", "href": "https://www.youtube.com/JulianBejarano", "external": true }
+    ],
+    "location": "Bogotá, Colombia",
+    "copyright": "© 2026 Julián Bejarano"
+  }
+}
