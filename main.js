@@ -370,21 +370,59 @@ function splitScramble(element) {
   });
 }
 
-// párrafo "lead": en vez de aparecer una sola vez, se enfoca y aclara en sincronía con el scroll (scrub, no "once")
-function scrollBlurReveal(element) {
-  gsap.fromTo(element, {
-    opacity: 0.2,
-    filter: "blur(10px)",
-  }, {
-    opacity: 1,
-    filter: "blur(0px)",
-    ease: "none",
-    scrollTrigger: {
-      trigger: element,
-      start: "top 90%",
-      end: "top 35%",
-      scrub: true,
-    },
+// texto de "Sobre mí": cada letra parte invisible y desenfocada, y el scroll las va aclarando una tras otra
+// como una ola. Es la técnica del atributo letters-fade-in de art-yakushev.com: va con "scrub", así que avanza
+// y retrocede con el scroll en vez de dispararse una sola vez. En móvil son demasiadas letras para animar una
+// a una, así que se aclara el párrafo completo (mismos rangos de scroll que la referencia en cada tamaño).
+function scrollLettersBlur(element) {
+  const media = gsap.matchMedia();
+
+  media.add({
+    wide: "(min-width: 1201px)",
+    medium: "(min-width: 768px) and (max-width: 1200px)",
+    narrow: "(max-width: 767px)",
+  }, function (context) {
+    const wide = context.conditions.wide;
+    const medium = context.conditions.medium;
+
+    if ((!wide && !medium) || typeof SplitText === "undefined") {
+      gsap.fromTo(element, {
+        opacity: 0,
+        filter: "blur(12px)",
+      }, {
+        opacity: 1,
+        filter: "blur(0px)",
+        ease: "power1.out",
+        scrollTrigger: { trigger: element, start: "top 100%", end: "bottom 55%", scrub: true },
+      });
+      return;
+    }
+
+    SplitText.create(element, {
+      type: "chars,words",
+      autoSplit: true,
+      onSplit: function (split) {
+        // el estado inicial se fija con set (no con fromTo): con stagger dentro de un timeline, fromTo solo
+        // aplicaría el estado inicial a la primera letra y las demás se verían nítidas antes de tiempo
+        gsap.set(split.chars, { opacity: 0, filter: "blur(10px)" });
+
+        return gsap.timeline({
+          scrollTrigger: {
+            trigger: element,
+            start: wide ? "top 80%" : "top 95%",
+            end: wide ? "bottom 20%" : "bottom 70%",
+            scrub: 0.15,
+            invalidateOnRefresh: true,
+          },
+        }).to(split.chars, {
+          opacity: 1,
+          filter: "blur(0px)",
+          ease: "power1.out",
+          duration: 1,
+          stagger: { amount: 0.8 },
+        });
+      },
+    });
   });
 }
 
@@ -414,8 +452,8 @@ function initAnimations() {
   }
 
   gsap.utils.toArray("[data-reveal]").forEach(function (element) {
-    if (element.dataset.reveal === "blur") {
-      scrollBlurReveal(element);
+    if (element.dataset.reveal === "letters-blur") {
+      scrollLettersBlur(element);
       return;
     }
 
